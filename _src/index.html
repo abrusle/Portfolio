@@ -4,18 +4,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Hello world</title>
+    <title>Alexis Bruslé Portfolio - Maintenance</title>
+    {% include headStuff.html %}
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+
+        #maintenance
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            font-size: 1.9em;
+            font-weight: bold;
+            font-family: 'museo-slab', serif;
+            margin: 0;
+        }
+
+        #brand
+        {
+            color: #0000000f;
+            position: fixed;
+            bottom: -0.2em;
+            right: 0;
+            font-size: 6em;
+            font-weight: 900;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <p>Hello world!</p>
-    <ul>
-        <li>Foo</li>
-        <li>Bar</li>
-        <li>Booh</li>
-    </ul>
-    <h4>Data Test :</h4>
-    <pre>{{ site.data.test }}</pre>
+    <p id="brand">Alexis Bruslé</p>
+    <p id="maintenance">Website under maintenance, please come back later :)</p>
 </body>
 </html>
