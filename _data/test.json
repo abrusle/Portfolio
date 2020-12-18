@@ -1,5 +1,0 @@
-{
-    "name":"test",
-    "access":"This json file will be accessible in the html via 'site.data.test'",
-    "documentation":"https://jekyllrb.com/docs/structure/"
-}
