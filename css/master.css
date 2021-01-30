@@ -7,9 +7,25 @@ body
 {
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    position: relative;
+    min-height: 100vh;
     
+    background-color: #f7f7f7;
+
     /* Base styling for children */
     color: #333;
     font-family: 'museo-sans', sans-serif;
+}
+
+body > .content
+{
+    position: relative;
+    max-width: 90%;
+    width: 40em;
+    margin: 0 auto;
+}
+
+a, a:visited
+{
+    color: #000;
 }
