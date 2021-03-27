@@ -20,6 +20,10 @@ body
 body > .content
 {
     position: relative;
+}
+
+.content > section:not(.full-width)
+{
     max-width: 90%;
     width: 40em;
     margin: 0 auto;
