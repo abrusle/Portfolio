@@ -1,0 +1,46 @@
+[
+    {
+        "title": "project one",
+        "isFeatured": true,
+        "intro": "this is the 1st project",
+        "cover": [
+            "images/miniature-world.jpg"
+        ],
+        "images": [
+            "images/miniature-world.jpg"
+        ]
+    },
+    {
+        "title": "project Two",
+        "isFeatured": false,
+        "intro": "this is the 2nd project",
+        "cover": [
+            "images/miniature-world.jpg"
+        ],
+        "images": [
+            "images/miniature-world.jpg"
+        ]
+    },
+    {
+        "title": "project Three",
+        "isFeatured": true,
+        "intro": "this is the 3rd project",
+        "cover": [
+            "images/miniature-world.jpg"
+        ],
+        "images": [
+            "images/miniature-world.jpg"
+        ]
+    },
+    {
+        "title": "project Four",
+        "isFeatured": true,
+        "intro": "this is the 4th project",
+        "cover": [
+            "images/miniature-world.jpg"
+        ],
+        "images": [
+            "images/miniature-world.jpg"
+        ]
+    }
+]

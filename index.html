@@ -17,18 +17,31 @@
         </section>
         <section id="projects" class="full-width">
             <!-- Featured Projects 4 max -->
-            {%- for i in (0..3) -%}
+            {%- assign i = 0 -%}
+            {%- for project in site.data.projects -%}
+                {%- unless project.isFeatured -%}
+                    {%- continue -%}
+                {%- endunless -%}
                 {%- assign isEven = i | modulo: 2 -%}
                 <div class="project{% if isEven == 0 %} reverse{% endif %}">
                     <picture class="thumbnail">
-                        <img src="images/miniature-world.jpg" alt="" type="image/jpeg">
+                        {%- assign isFallback = true -%}
+                        {%- for path in project.cover reversed -%}
+                            {%- if isFallback == true -%}
+                                {%- assign isFallback = false -%}
+                                <img src="{{path}}" alt="" type="image/jpeg">
+                            {%- else -%}
+                                <source src="{{path}}">
+                            {%- endif -%}
+                        {%- endfor -%}
                     </picture>
                     <div class="info">
-                        <h1>Project {{i}}</h1>
-                        <p>This is an awesome project I made.</p>
+                        <h1>{{project.title}}</h1>
+                        <p>{{project.intro}}</p>
                         <a href="#" class="button">Learn more</a>
                     </div>
                 </div>
+                {%- assign i = i | plus: 1 -%}
             {%- endfor -%}
         </section>
     </div>
